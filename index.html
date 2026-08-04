@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pré-ENEM Digital MT · Química — Estudo das Soluções</title>
+<meta name="description" content="Aula interativa e gamificada de Química para o ENEM. Estudo das Soluções com Metodologias Ativas (ABP + Gamificação). Bio+Tech EduDesign · Governo de Mato Grosso.">
+<meta name="author" content="Bio+Tech EduDesign">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- BARRA INSTITUCIONAL -->
+  <div class="inst-bar">
+    <img src="assets/logos/biotech_edudesign.png" alt="Bio+Tech EduDesign" class="logo-biotech">
+    <div class="inst-txt">
+      Pré-ENEM Digital MT · Química
+      <small>Ação Governamental de Educação Pública | Desenvolvimento autoral Bio+Tech EduDesign</small>
+    </div>
+    <img src="assets/logos/gov_mato_grosso.png" alt="Governo de Mato Grosso · SEDUC" class="logo-gov">
+  </div>
+
+  <!-- HEADER HUD -->
+  <header>
+    <h1>🧪 Estudo das Soluções — Pré-ENEM</h1>
+    <div class="hud">
+      <div class="chip"><img id="avatarHUD" src="assets/avatars/curie.png" class="avatar-mini" alt="Mentora"><span id="userName">—</span></div>
+      <div class="chip">⭐ <span id="pontos">0</span> XP</div>
+      <div class="chip lives" id="lives">
+        <span class="heart">❤️</span><span class="heart">❤️</span><span class="heart">❤️</span>
+      </div>
+      <div class="chip">🏅 <span id="badgeCount">0</span></div>
+      <div class="badge-gallery" id="badgeGallery"></div>
+    </div>
+  </header>
+
+  <div class="progress-wrap">
+    <div class="progress-bar"><div class="progress-fill" id="progFill"></div></div>
+    <div class="progress-text" id="progText">Progresso: 0/5 missões</div>
+  </div>
+
+  <!-- TELA 1: BOAS-VINDAS -->
+  <div class="screen active" id="s-welcome">
+    <div class="welcome card">
+      <h2>🚀 Missão: Dominar as Soluções</h2>
+      <p class="subtitle">Uma jornada gamificada com metodologias ativas: <strong>Aprendizagem Baseada em Problemas (ABP)</strong> + <strong>Gamificação</strong></p>
+
+      <p style="margin:14px 0">Você foi contratado(a) como <strong style="color:var(--gold)">químico(a) júnior</strong> de um laboratório de análises. Uma <strong style="color:var(--purple)">cientista histórica</strong> será sua mentora nesta jornada de 5 missões. Escolha quem vai te acompanhar:</p>
+
+      <h3 style="margin-top:20px;color:var(--accent)">👩‍🔬 Escolha sua Mentora Cientista:</h3>
+      <div class="scientist-grid" id="scientistGrid"></div>
+
+      <input type="text" id="nomeInput" class="input-nome" placeholder="Digite seu nome" maxlength="20">
+      <br>
+      <button class="btn gold" id="btnStart">▶ Começar Jornada</button>
+
+      <div class="info-box" style="margin-top:24px;text-align:left">
+        <strong>📚 O que você vai aprender:</strong>
+        <ul style="margin-top:6px">
+          <li>Conceitos de soluto, solvente e solução</li>
+          <li>Coeficiente de solubilidade e curvas de solubilidade</li>
+          <li>Concentração comum, título em massa (%), ppm e molaridade</li>
+          <li>Diluição e mistura de soluções</li>
+          <li>5 questões oficiais do ENEM + 3 questões-desafio inéditas</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:20px; padding:16px; background:rgba(167,139,250,.1); border:1px solid var(--purple); border-radius:12px; text-align:left">
+        <strong style="color:var(--purple)">🌟 Sobre as Mentoras:</strong>
+        <p style="font-size:.9rem; margin-top:6px; color:var(--muted)">
+          Escolhemos <strong>6 cientistas históricas</strong> para celebrar o protagonismo feminino na ciência. Cada uma acompanhará você durante as missões com dicas contextuais baseadas em sua trajetória real.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- TELA 2: TRILHA -->
+  <div class="screen" id="s-trilha">
+    <div class="card">
+      <h2>🗺️ Trilha de Missões</h2>
+      <p>Complete as missões em ordem. Cada uma desbloqueia a próxima e concede uma badge exclusiva. Sua mentora <span id="oiMentora" style="color:var(--purple);font-weight:700"></span> te acompanhará em cada etapa. Boa sorte, <span id="oiNome" style="color:var(--gold);font-weight:700"></span>!</p>
+      <div class="trilha" id="trilhaGrid"></div>
+    </div>
+  </div>
+
+  <!-- TELA DE MISSÕES DINÂMICA -->
+  <div class="screen" id="s-missao"></div>
+
+  <!-- FINAL -->
+  <div class="screen" id="s-final">
+    <div class="card final">
+      <div class="trophy">🏆</div>
+      <h2 id="finalTitulo">Parabéns, químico(a)!</h2>
+      <p style="color:var(--muted);font-size:1.05rem">Você concluiu todas as missões.</p>
+      <div class="medalha" id="medalha">🥇</div>
+
+      <h3 style="color:var(--gold); margin:20px 0 10px">🏅 Suas Conquistas</h3>
+      <div class="final-badges" id="finalBadges"></div>
+
+      <div class="stats">
+        <div class="stat"><div class="num" id="fPontos">0</div><div class="lbl">XP TOTAL</div></div>
+        <div class="stat"><div class="num" id="fAcertos">0</div><div class="lbl">ACERTOS</div></div>
+        <div class="stat"><div class="num" id="fBadges">0</div><div class="lbl">BADGES</div></div>
+        <div class="stat"><div class="num" id="fRank">-</div><div class="lbl">RANKING</div></div>
+      </div>
+      <div id="finalDicaFinal" style="margin:14px 0;color:#e2e8f0;text-align:left"></div>
+      <button class="btn gold" onclick="location.reload()">🔄 Jogar Novamente</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Pré-ENEM Digital MT · Química</strong> — Estudo das Soluções</p>
+    <p>Uma iniciativa do <a href="#" target="_blank">Governo de Mato Grosso · SEDUC</a> · Desenvolvimento autoral <a href="#" target="_blank">Bio+Tech EduDesign</a></p>
+    <p style="margin-top:8px">🧬 Feito com metodologia ativa · ABP + Gamificação · Licença MIT</p>
+  </footer>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

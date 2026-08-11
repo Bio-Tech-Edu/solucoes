@@ -217,7 +217,7 @@ pre-enem-quimica-solucoes/
 | Categoria | Instituição/Autoria |
 |---|---|
 | **Apoio Institucional** | Governo do Estado de Mato Grosso · Secretaria de Estado de Educação, Esporte e Lazer (SEDUC-MT) |
-| **Desenvolvimento Autoral** | Bio+Tech EduDesign ([Prof.ª Pâmella A. Balcaçar](@pamellabiotec)) |
+| **Desenvolvimento Autoral** | Bio+Tech EduDesign ([Prof.ª Pâmella A. Balcaçar](https://github.com/pamellabiotec) |
 | **Base Didática** | Apostila oficial Pré-ENEM MT · Vídeo-aula CONECTA ENEM (Prof. Gustavo Pinheiro / Editora LT) |
 | **Questões** | ENEM 2019, 2020, 2023 (INEP) + questões inéditas estilo ENEM |
 

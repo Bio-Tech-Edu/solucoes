@@ -217,9 +217,19 @@ pre-enem-quimica-solucoes/
 | Categoria | Instituição/Autoria |
 |---|---|
 | **Apoio Institucional** | Governo do Estado de Mato Grosso · Secretaria de Estado de Educação, Esporte e Lazer (SEDUC-MT) |
-| **Desenvolvimento Autoral** | Bio+Tech EduDesign |
+| **Desenvolvimento Autoral** | Bio+Tech EduDesign ([Prof.ª Pâmella A. Balcaçar](@pamellabiotec)) |
 | **Base Didática** | Apostila oficial Pré-ENEM MT · Vídeo-aula CONECTA ENEM (Prof. Gustavo Pinheiro / Editora LT) |
 | **Questões** | ENEM 2019, 2020, 2023 (INEP) + questões inéditas estilo ENEM |
+
+---
+
+## 🔗 Projetos Relacionados
+
+Este projeto faz parte da **série Pré-ENEM Digital MT · Química**:
+- 💡[Lições:  17 · O átomo e Modelos atômicos; 18 ·  Classificação periódica e ligações químicas; e 19 · Funções inorgânicas](https://bio-tech-edu.github.io/chemical-royale/)
+- ⚗️[Lições:  20 · Cálculos Químicos & 21 · Radioatividade](https://bio-tech-edu.github.io/chemical-royale-v2/)
+- 🧪 **Lição 22 · Estudo das Soluções**(você está aqui)
+- 🔥 [Lição 23 · Termoquímica](https://bio-tech-edu.github.io/termoquimica/)
 
 ---
 
